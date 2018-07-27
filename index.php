@@ -1,5 +1,6 @@
 <?php
-$age = 18;
+//Déclaration de la variable
+$age = -5;
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -10,9 +11,13 @@ $age = 18;
 <body>
   <p>
     <?php
-    if ($age >=18){
+    //Alerte si l'age est en dessous de 0
+    if ($age < 0){
+      echo 'Veuillez entrer un age valide';
+    //Affichage du message en fonction de l'age
+    } elseif ($age >=18){
       echo 'Vous êtes majeur';
-    }else {
+    } else {
       echo 'Vous êtes mineur';
     }
     ?>
